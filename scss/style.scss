@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+$primary-color: #3498db;
+$secondary-color: #3480db;
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+
+.about-me {
+    display: flex;
+    width: 95%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+
+    .profile-image {
+        width: 20%;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .about-text {
+        width: 75%;
+        text-align: left;
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            color: #555;
+        }
+
+        .social-icons {
+            margin-top: 20px;
+
+            a {
+                margin-right: 10px;
+                color: $primary-color;
+                font-size: 24px;
+            }
+
+            a:hover {
+                color: $secondary-color ;
+            }
+        }
+    }
+}
+
+
+.values {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+
+    .card {
+        text-align: center;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin: 0 10px;
+
+        i {
+            font-size: 50px;
+            color: $primary-color;
+        }
+
+        h3 {
+            margin-top: 10px;
+            color: #333;
+        }
+
+        p {
+            color: #555;
+        }
+    }
+}
+
+.news-article {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+
+    .image-container {
+        width: 40%;
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 40px;
+        }
+    }
+
+    button {
+        background-color: $primary-color;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    button:hover {
+        background-color: $secondary-color ;
+        color: white;
+    }
+
+    .text-container {
+        max-width: 600px;
+        text-align: left;
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            color: #555;
+        }
+    }
+
+    &.reversed {
+        flex-direction: row-reverse;
+    }
+}
+
+.contact-form {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 50px;
+
+    h2 {
+        color: #333;
+    }
+
+    .form-container {
+        border-radius: 20px;
+        width: 70%;
+        margin: 0 auto;
+        padding: 60px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        label {
+            display: block;
+            margin-top: 10px;
+            color: #333;
+            text-align: left;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        button {
+            background-color: $primary-color;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: $secondary-color ;
+            color: white;
+        }
+
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    .about-me {
+        width: 90%;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+
+        .profile-image {
+            width: 60%;
+
+            img {
+                border-radius: 50%;
+            }
+        }
+
+        .about-text {
+            width: 90%;
+
+            h2, p {
+                text-align: center;
+            }
+
+            .social-icons {
+                margin: 20px 0;
+                text-align: center;
+
+                a {
+                    margin-right: 10px;
+                    
+                }
+            }
+        }
+    }
+
+    .values {
+        flex-direction: column;
+
+        .card {
+            margin-bottom: 20px;
+        }
+    }
+
+    .news-article, .news-article.reversed {
+        flex-direction: column;
+
+        .image-container {
+            width: 100%;
+
+            img {
+                border-radius: 20px;
+            }
+        }
+
+        .text-container {
+            max-width: 100%;
+        }
+    }
+
+    .contact-form {
+        width: 85%;
+        padding: 25px;
+
+        .form-container {
+            width: 70%;
+            padding: 30 40 30 30;
+        }
+    }
+}

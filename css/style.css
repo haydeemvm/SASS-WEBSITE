@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0; }
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: black;
+  color: white; }
+
+.about-me {
+  display: flex;
+  width: 95%;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px; }
+  .about-me .profile-image {
+    width: 20%; }
+    .about-me .profile-image img {
+      width: 100%;
+      height: auto; }
+  .about-me .about-text {
+    width: 75%;
+    text-align: left; }
+    .about-me .about-text h2 {
+      color: #333; }
+    .about-me .about-text p {
+      color: #555; }
+    .about-me .about-text .social-icons {
+      margin-top: 20px; }
+      .about-me .about-text .social-icons a {
+        margin-right: 10px;
+        color: #3498db;
+        font-size: 24px; }
+      .about-me .about-text .social-icons a:hover {
+        color: #3480db; }
+
+.values {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px; }
+  .values .card {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 10px; }
+    .values .card i {
+      font-size: 50px;
+      color: #3498db; }
+    .values .card h3 {
+      margin-top: 10px;
+      color: #333; }
+    .values .card p {
+      color: #555; }
+
+.news-article {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px; }
+  .news-article .image-container {
+    width: 40%; }
+    .news-article .image-container img {
+      width: 100%;
+      height: auto;
+      border-radius: 40px; }
+  .news-article button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; }
+  .news-article button:hover {
+    background-color: #3480db;
+    color: white; }
+  .news-article .text-container {
+    max-width: 600px;
+    text-align: left; }
+    .news-article .text-container h2 {
+      color: #333; }
+    .news-article .text-container p {
+      color: #555; }
+  .news-article.reversed {
+    flex-direction: row-reverse; }
+
+.contact-form {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  padding: 50px; }
+  .contact-form h2 {
+    color: #333; }
+  .contact-form .form-container {
+    border-radius: 20px;
+    width: 70%;
+    margin: 0 auto;
+    padding: 60px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+    .contact-form .form-container label {
+      display: block;
+      margin-top: 10px;
+      color: #333;
+      text-align: left; }
+    .contact-form .form-container input,
+    .contact-form .form-container textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+      font-family: 'Poppins', sans-serif; }
+    .contact-form .form-container button {
+      background-color: #3498db;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px; }
+    .contact-form .form-container button:hover {
+      background-color: #3480db;
+      color: white; }
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white; }
+
+@media only screen and (max-width: 768px) {
+  header {
+    padding: 10px; }
+  .about-me {
+    width: 90%;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px; }
+    .about-me .profile-image {
+      width: 60%; }
+      .about-me .profile-image img {
+        border-radius: 50%; }
+    .about-me .about-text {
+      width: 90%; }
+      .about-me .about-text h2, .about-me .about-text p {
+        text-align: center; }
+      .about-me .about-text .social-icons {
+        margin: 20px 0;
+        text-align: center; }
+        .about-me .about-text .social-icons a {
+          margin-right: 10px; }
+  .values {
+    flex-direction: column; }
+    .values .card {
+      margin-bottom: 20px; }
+  .news-article, .news-article.reversed {
+    flex-direction: column; }
+    .news-article .image-container, .news-article.reversed .image-container {
+      width: 100%; }
+      .news-article .image-container img, .news-article.reversed .image-container img {
+        border-radius: 20px; }
+    .news-article .text-container, .news-article.reversed .text-container {
+      max-width: 100%; }
+  .contact-form {
+    width: 85%;
+    padding: 25px; }
+    .contact-form .form-container {
+      width: 70%;
+      padding: 30 40 30 30; } }
